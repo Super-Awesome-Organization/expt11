@@ -1,3 +1,11 @@
+// Group 2: Raj Patel, Zachary Rouviere, Evan Waxman
+// Experiement 11 Part 3
+// 12/6/21
+
+// Description: This is a modified c499 benchmark file that adds combinational obfuscation to the output
+// of the benchmark file. Xor gates are added when the correct key is 0 and Xnor gates are added when the correct
+// key is 1.
+
 // Verilog
 // c499
 // Ninputs 41
@@ -49,6 +57,7 @@ wire N250,N251,N252,N253,N254,N255,N256,N257,N258,N259,
      N704,N705,N706,N707,N708,N709,N710,N711,N712,N713,
      N714,N715,N716,N717,N718,N719,N720,N721,N722,N723;
 
+// added for obsfuscation
 wire N724_OBFUS,N725_OBFUS,N726_OBFUS,N727_OBFUS,N728_OBFUS,N729_OBFUS,N730_OBFUS,N731_OBFUS,N732_OBFUS,N733_OBFUS,
        N734_OBFUS,N735_OBFUS,N736_OBFUS,N737_OBFUS,N738_OBFUS,N739_OBFUS,N740_OBFUS,N741_OBFUS,N742_OBFUS,N743_OBFUS,
        N744_OBFUS,N745_OBFUS,N746_OBFUS,N747_OBFUS,N748_OBFUS,N749_OBFUS,N750_OBFUS,N751_OBFUS,N752_OBFUS,N753_OBFUS,
