@@ -33,17 +33,18 @@ module c499_tb ();
 		`DELAY(100)
 
 		in = 41'h45678969;
+		keyinput2 = 16'b0111100101011110;
+		`DELAY(100)
+		$display("Correct key: %0h, Input: %0h, Correct output: %0h", keyinput2, in, out);
+		`DELAY(100)
+
 		repeat(10) begin
 			keyinput2 = $random;
-			`DELAY(50)
+			`DELAY(100)
 			$display("Key: %0h, Input: %0h, Output: %0h", keyinput2, in, out);
 			keyinput2 = 0;
-			`DELAY(50)
+			`DELAY(100)
 		end
-
-		`DELAY(50)
-		keyinput2 = 16'b0111100101011110;
-		$display("Correct key: %0h, Input: %0h, Correct output: %0h", keyinput2, in, out);
 
         `DELAY(100)
         $display($time, "- Ending Sim");

@@ -228,48 +228,63 @@ xor XOR2_171 (N724_OBFUS, N1, N692);
 xor XOR2_171_OBFUS (N724, N724_OBFUS, keyinput2[0]);
 
 xor XOR2_172 (N725_OBFUS, N5, N693);
+// combinational obfuscation xnor gate
 xnor XOR2_172_OBFUS (N725, N725_OBFUS, keyinput2[1]);
 
 xor XOR2_173 (N726_OBFUS, N9, N694);
+// combinational obfuscation xnor gate
 xnor XOR2_173_OBFUS (N726, N726_OBFUS, keyinput2[2]);
 
 xor XOR2_174 (N727_OBFUS, N13, N695);
+// combinational obfuscation xnor gate
 xnor XOR2_174_OBFUS (N727, N727_OBFUS, keyinput2[4]);
 
 xor XOR2_175 (N728_OBFUS, N17, N696);
+// combinational obfuscation xor gate
 xor XOR2_175_OBFUS (N728, N728_OBFUS, keyinput2[7]);
 
 xor XOR2_176 (N729_OBFUS, N21, N697);
+// combinational obfuscation xnor gate
 xnor XOR2_176_OBFUS (N729, N729_OBFUS, keyinput2[3]);
 
 xor XOR2_177 (N730_OBFUS, N25, N698);
+// combinational obfuscation xor gate
 xor XOR2_177_OBFUS (N730, N730_OBFUS, keyinput2[5]);
 
 xor XOR2_178 (N731_OBFUS, N29, N699);
+// combinational obfuscation xnor gate
 xnor XOR2_178_OBFUS (N731, N731_OBFUS, keyinput2[6]);
 
 xor XOR2_179 (N732_OBFUS, N33, N700);
+// combinational obfuscation xor gate
 xor XOR2_179_OBFUS (N732, N732_OBFUS, keyinput2[9]);
 
 xor XOR2_180 (N733_OBFUS, N37, N701);
+// combinational obfuscation xnor gate
 xnor XOR2_180_OBFUS (N733, N733_OBFUS, keyinput2[8]);
 
 xor XOR2_181 (N734_OBFUS, N41, N702);
+// combinational obfuscation xor gate
 xor XOR2_181_OBFUS (N734, N734_OBFUS, keyinput2[10]);
 
 xor XOR2_182 (N735_OBFUS, N45, N703);
+// combinational obfuscation xnor gate
 xnor XOR2_182_OBFUS (N735, N735_OBFUS, keyinput2[11]); 
 
 xor XOR2_183 (N736_OBFUS, N49, N704);
+// combinational obfuscation xnor gate
 xnor XOR2_183_OBFUS (N736, N736_OBFUS, keyinput2[12]);
 
 xor XOR2_184 (N737_OBFUS, N53, N705);
+// combinational obfuscation xnor gate
 xnor XOR2_184_OBFUS (N737, N737_OBFUS, keyinput2[13]);
 
 xor XOR2_185 (N738_OBFUS, N57, N706);
+// combinational obfuscation xnor gate
 xnor XOR2_185_OBFUS (N738, N738_OBFUS, keyinput2[14]);
 
 xor XOR2_186 (N739_OBFUS, N61, N707);
+// combinational obfuscation xor gate
 xor XOR2_186_OBFUS (N739, N739_OBFUS, keyinput2[15]);
 
 xor XOR2_187 (N740, N65, N708);
