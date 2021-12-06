@@ -32,17 +32,18 @@ module c499_tb ();
 		$display($time, "- Starting Sim");
 		`DELAY(100)
 
-		in = 41'h45678969;
-		keyinput2 = 16'b0111100101011110;
+		in = 41'h45678969; // input
+		keyinput2 = 16'b0111100101011110; // correct key
 		`DELAY(100)
-		$display("Correct key: %0h, Input: %0h, Correct output: %0h", keyinput2, in, out);
+		$display("Correct key: %0h, Input: %0h, Correct output: %0h", keyinput2, in, out); // displays correct key, input, and output
 		`DELAY(100)
 
+		// generates 10 random keys
 		repeat(10) begin
 			keyinput2 = $random;
 			`DELAY(100)
-			$display("Key: %0h, Input: %0h, Output: %0h", keyinput2, in, out);
-			keyinput2 = 0;
+			$display("Key: %0h, Input: %0h, Output: %0h", keyinput2, in, out); // displays wrong key, input, and output
+			keyinput2 = 0;	// sets key to 0 for random function to work
 			`DELAY(100)
 		end
 
