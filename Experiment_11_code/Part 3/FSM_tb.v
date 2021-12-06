@@ -10,82 +10,91 @@
 
 module FSM_tb;
 
-    reg x,clk;
+    reg x;
+    reg clk=0;
     wire out;
 
     FSM uut0 (.clk(clk), .x(x), .out(out));
+    
 
     initial begin
 
-        clk = 0;
+
+        assign clk = 0;
 
         // Group 2 key 5’b11110
         // insert test cases with #20 between for clk
 
         // Case A ~P1O->~P2O->~P3O->~P4O->~P5O
 
-        x = 1'b0
-        #20
-        x = 1'b0
-        #20
-        x = 1'b0
-        #20
-        x = 1'b0
-        #20
-        x = 1'b1
-        #20
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b1; 
+        // #20;
+        
 
         // Case B P1O->~P2O->~P3O->~P4O->~P5O
 
-        // x = 1'b1
-        // #20
-        // x = 1'b0
-        // #20
-        // x = 1'b0
-        // #20
-        // x = 1'b0
-        // #20
-        // x = 1'b1
-        // #20
+        // assign x = 1'b1;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b0;
+        // #20;
+        // assign x = 1'b1;
+        // #20;
 
         // Case C P1O->P2O->P3O->P4O->~P5O
 
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
+        // assign x = 1'b1;
+        // #20;
+        // assign x = 1'b1;
+        // #20;
+        // assign x = 1'b1;
+        // #20;
+        // assign x = 1'b1;
+        // #20;
+        // assign x = 1'b1; 
+        // #20;
+
 
         // Case D P1O->P2O->P3O->P4O->P5O
 
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b1
-        // #20
-        // x = 1'b0
-        // #20
+        assign x = 1'b1;
+        #20;
+        assign x = 1'b1;
+        #20;
+        assign x = 1'b1;
+        #20;
+        assign x = 1'b1;
+        #20;
+        assign x = 1'b0; 
+        #20;
+ 
 
         // x for original FSM design
-        x = 1'b1
-        #20
+        assign x = 1'b1;
+
+        #400;
+        $stop; 
+        
             
     end
 
 
     always begin
         
-    
-        #10 clk = !clk; // toggles clk and add 10 delay
-
+        #10;
+         assign clk = ~clk; // toggles clk and add 10 delay
+          
      end 
 
 
